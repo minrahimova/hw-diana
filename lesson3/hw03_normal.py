@@ -101,10 +101,6 @@ b = []
 b.append(a)
 print(b)
 # б:
-lst = [1, 2, 4, 5, 6, 2, 5, 2]
-a = []
-for i in lst:
-    f = lst.count(i)
-    if f == 1:
-        a.append(i)
-print(a)
+a = set([1, 2, 4, 5, 6, 2, 5, 2])
+b = list(a)
+print(b)
