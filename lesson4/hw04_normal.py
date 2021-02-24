@@ -66,6 +66,11 @@ while sort_to_max:
 print(new_list)
 
 
+sort_to_max = ([2, 10, -12, 2.5, 20, -11, 4, 4, 0])
+sort_to_max = sorted(sort_to_max)
+print(sort_to_max)
+
+
 # Задача-3:
 # Напишите собственную реализацию стандартной функции filter.
 # Разумеется, внутри нельзя использовать саму функцию filter.
