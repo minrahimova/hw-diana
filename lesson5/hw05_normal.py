@@ -67,12 +67,5 @@ line_2 = 'mtMmEZUOmcqWiryMQhhTxqKdSTKCYEJlEZCsGAMkgAYEOmHBSQsSUHKvSfbmxULaysm'\
        'oiQzTYwZAiRwycdlHfyHNGmkNqSwXUrxGC'
 
 
-
-
-
-# Задание-3:
-# Напишите скрипт, заполняющий указанный файл (самостоятельно задайте имя файла)
-# произвольными целыми цифрами, в результате в файле должно быть
-# 2500-значное произвольное число.
-# Найдите и выведите самую длинную последовательность одинаковых цифр
-# в вышезаполненном файле.
+result = re.findall(r"[a-z]{2}([A-Z]+)[A-Z]{2}", line)
+print(result)
