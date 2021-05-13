@@ -22,6 +22,10 @@ for i in a:
 print(a, b)
 
 
+a = [i ** 2 for i in [1, 2, 4, 0]]
+print(a)
+
+
 # Задание-2:
 # Даны два списка фруктов.
 # Получить список фруктов, присутствующих в обоих исходных списках.
@@ -50,6 +54,7 @@ print(d)
 # + Элемент положительный
 # + Элемент не кратен 4
 
+
 from random import randint
 
 a = []
@@ -57,18 +62,15 @@ b = []
 for i in range(15):
     a.append(randint(0, 50))
 
-if i % 3 == 0:
-    b.append(i)
-
-if i >= 0:
-    b.append(i)
-
-if i % 4 != 0:
-    b.append(i)
-
+for i in a:
+    if i % 3 == 0 and i >= 0 and i % 4 != 0:
+        b.append(i)
 print(b)
 
 
+a = [randint(0, 50) for i in range(15)]
+b = [i for i in a if i % 3 == 0 and i >= 0 and i % 4 != 0]
+print(b)
 
 
 
